@@ -2,11 +2,10 @@ import 'package:calcu/core/adapters/hive_adapters.dart';
 import 'package:calcu/app/providers/app_providers.dart';
 import 'package:calcu/presentation/backdropScreen/backdrop_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:hive_flutter/hive_flutter.dart';
 import 'package:provider/provider.dart';
 
 void main() async {
-  await Hive.initFlutter();
+  HiveAdapters.initialiseHive();
   HiveAdapters.registerAdapters();
   runApp(const Lava());
 }

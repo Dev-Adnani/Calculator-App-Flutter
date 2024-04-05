@@ -20,7 +20,7 @@ class CalculatorScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Consumer<CalculatorNotfier>(
+              child: Consumer<CalculatorNotifier>(
                 builder: (context, calculatorProvider, _) {
                   return Text(
                     calculatorProvider.input,
@@ -34,7 +34,7 @@ class CalculatorScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Consumer<CalculatorNotfier>(
+              child: Consumer<CalculatorNotifier>(
                 builder: (context, calculatorProvider, _) {
                   return Text(
                     calculatorProvider.output,
@@ -50,7 +50,7 @@ class CalculatorScreen extends StatelessWidget {
             SizedBox(
               height: MediaQuery.of(context).size.height * 0.1,
             ),
-            Consumer<CalculatorNotfier>(
+            Consumer<CalculatorNotifier>(
               builder: (context, calculatorProvider, _) {
                 return Column(
                   children: [
@@ -64,8 +64,10 @@ class CalculatorScreen extends StatelessWidget {
                               j < (i * 4) + 4 &&
                                   j < calculatorProvider.buttons.length;
                               j++)
-                            displayButton(context, calculatorProvider,
-                                calculatorProvider.buttons[j]),
+                            DisplayButton(
+                              calculatorProvider: calculatorProvider,
+                              text: calculatorProvider.buttons[j],
+                            ),
                         ],
                       ),
                   ],

@@ -5,7 +5,7 @@ import 'package:provider/provider.dart';
 
 class AppProvider {
   static List<SingleChildWidget> providers = [
-    ChangeNotifierProvider(create: (_) => CalculatorNotfier()),
+    ChangeNotifierProvider(create: (_) => CalculatorNotifier()),
     ChangeNotifierProvider(create: (_) => EquationNotifier()),
   ];
 }

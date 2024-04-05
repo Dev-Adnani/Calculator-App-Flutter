@@ -5,4 +5,8 @@ class HiveAdapters {
   static registerAdapters() {
     Hive.registerAdapter(EquationModelAdapter());
   }
+
+  static initialiseHive() async {
+    await Hive.initFlutter();
+  }
 }

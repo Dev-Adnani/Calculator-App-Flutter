@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:math_expressions/math_expressions.dart';
 
-class CalculatorNotfier with ChangeNotifier {
+class CalculatorNotifier with ChangeNotifier {
   String _input = '';
   String _output = '';
   bool _anyError = false;
