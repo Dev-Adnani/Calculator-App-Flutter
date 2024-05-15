@@ -1,7 +1,5 @@
 # Flutter Calculator App
 
-This is a simple calculator app built using Flutter, a UI toolkit developed by Google for building natively compiled applications for mobile, web, and desktop from a single codebase.
-
 ## Features
 
 - Perform basic arithmetic operations such as addition, subtraction, multiplication, and division.
