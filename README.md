@@ -42,3 +42,8 @@
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request with your changes.
+
+
+## Feedback
+
+If you have any feedback, please reach out to us at dev.adnani26@gmail.com
